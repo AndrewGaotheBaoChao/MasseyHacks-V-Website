@@ -58,7 +58,7 @@ $(document).ready(function () {
         if (e.which == 13 && (document.activeElement.nodeName == 'TEXTAREA' || document.activeElement.nodeName == 'INPUT')) {
             e.preventDefault();
             var email = $('#mce-EMAIL');
-			console.log(email);
+			      console.log(email);
             sub(email);
 			$('#mce-EMAIL').val('');
         }
@@ -66,7 +66,7 @@ $(document).ready(function () {
 
     $('#mc-embedded-subscribe').click(function () {
         var email = $('#mce-EMAIL');
-		console.log(email);
+		    console.log(email);
         sub(email);
 		$('#mce-EMAIL').val('');
     });
