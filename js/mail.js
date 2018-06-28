@@ -1,5 +1,6 @@
 $(document).ready(function () {
     function sub (email) {
+      console.log(email.val());
         if (email.val() != '') {
             swal({
                 type: 'info',
@@ -60,7 +61,6 @@ $(document).ready(function () {
             var email = $('#mce-EMAIL');
 			      console.log(email);
             sub(email);
-			$('#mce-EMAIL').val('');
         }
     });
 
@@ -68,6 +68,5 @@ $(document).ready(function () {
         var email = $('#mce-EMAIL');
 		    console.log(email);
         sub(email);
-		$('#mce-EMAIL').val('');
     });
 });
